@@ -9,7 +9,7 @@ Simply fork this repo and create a pull request! There are a few requirements:
 
 ## File header
 In addition to these rules, you should place this file header at the top of your snippet. If one of the headers does not apply to you (e.g. no website) simply remove that line.
-`Required extra node modules` should not include `react` or `react-native` since those are implied (but SHOULD include `expo`, if needed). If there are no required node modules you can remove the "To install all required modules..." lines.
+`Required extra node modules` should not include `react` or `react-native` since those are implied (but SHOULD include `expo`, if needed). If there are no required node modules you can remove the `Required extra node modules` and `To install all required modules...` lines.
 ```javascript
 /**
  * Author: {Your Name}
