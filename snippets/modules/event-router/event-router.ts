@@ -13,14 +13,10 @@
 type EventListener<T> = (data?: T) => void;
 type EventSubscription = { remove: () => void };
 
-interface EventFuncs<T> {
-    subscribe(listener: EventListener<T>): EventSubscription;
-}
-
-class EventRouter<T> implements EventFuncs<T> {
+class EventRouter<T> {
     private listeners: EventListener<T>[] = [];
 
-    subscribe(listener: EventListener<T>) {
+    subscribe(listener: EventListener<T>): EventSubscription {
         this.listeners.push(listener);
         return {
             remove: () => {
@@ -32,10 +28,6 @@ class EventRouter<T> implements EventFuncs<T> {
 
     public trigger(data?: T) {
         this.listeners.forEach(l => l(data));
-    }
-
-    public asEventFuncs(): EventFuncs<T> {
-        return this;
     }
 }
 

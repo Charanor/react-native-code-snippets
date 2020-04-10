@@ -18,7 +18,7 @@ class ClassWithEvent {
     }
 
     public get onStateChanged() {
-        return this.onStateChangedRouter.asEventFuncs();
+        return this.onStateChangedRouter.subscribe;
     }
 }
 
@@ -27,7 +27,7 @@ const instance = new ClassWithEvent();
 function Component() {
     const [state, setState] = useState<State>(undefined);
     useEffect(() => {
-        const sub = instance.onStateChanged.subscribe(setState);
+        const sub = instance.onStateChanged(setState);
         return sub.remove;
     }, []);
 
