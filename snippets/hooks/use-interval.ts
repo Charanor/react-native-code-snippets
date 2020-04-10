@@ -3,7 +3,9 @@
  * Author GitHub: https://github.com/Charanor
  * Project Github: https://github.com/Charanor/react-native-code-snippets
  * License: Creative Commons Zero v1.0 Universal (CC0)
- * Required extra node modules: nothing
+ * 
+ * Description:
+ *     This is a hook that makes "useInterval" declarative!
  * 
  * Usage:
  *     import useInterval from "./use-interval";
