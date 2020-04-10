@@ -6,7 +6,7 @@
  * Required extra node modules: nothing
  * 
  * Usage:
- *     import {useGlobalState} from "./global-state";
+ *     import { useGlobalState } from "./global-state";
  *     function Component() {
  *         const { state, reducer } = useGlobalState();
  *         return <Text>{state.data}</Text>;
