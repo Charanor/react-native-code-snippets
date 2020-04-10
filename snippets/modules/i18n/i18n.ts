@@ -14,14 +14,6 @@
  * Description:
  *     This is a module that allows you to seamlessly translate your app in real-time.
  * 
- * Usage:
- *     import {init as initI18n, translate as $} from "./i18n";
- *     
- *     initI18n(); // ONCE before using
- * 
- *     const message1 = $("some-key");
- *     const message2 = $("nested.object");
- * 
  * Please keep this comment at the top of the file to show support (even though you are free to remove it) :)
  */
 
