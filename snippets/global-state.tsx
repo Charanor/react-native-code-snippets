@@ -3,7 +3,10 @@
  * Author GitHub: https://github.com/Charanor
  * Project Github: https://github.com/Charanor/react-native-code-snippets
  * License: Creative Commons Zero v1.0 Universal (CC0)
- * Required extra node modules: nothing
+ * 
+ * Description:
+ *     This is a module that allows your app to have a global state without using Redux. You can interract with
+ *     the global state using hooks or a context consumer.
  * 
  * Usage:
  *     import { useGlobalState } from "./global-state";
