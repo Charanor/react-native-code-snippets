@@ -1,7 +1,7 @@
 # How can I contribute?
 Simply fork this repo and create a pull request! There are a few requirements:
 - **The code must be yours.** Do not just copy+paste code snippets from Stack Overflow.
-- **The snippet must be non-trivial.** E.g. very simple style changes (big red text component) is not allowed. Creating a text component that animates the text like a typewriter is fine.
+- **The snippet must be non-trivial.** E.g. very simple style changes (big red text component) are not allowed. Creating a text component that animates the text like a typewriter is fine.
 - **The file name must be descriptive of the snippet.** `CoolText` is bad. `TypewriterAnimatedText` is good.
 - **The snippet must be self-contained.** One file = one snippet. A snippet should never be split into multiple files, except for example files (see: `i18n` snippet for acceptable separation). If a snippet contains several self-contained items, e.g. a `text-components` snippet, separate those into separate snippets. E.g. `TypewriterAnimatedText` and `LineFollowingText`.
 - **Follow the naming convention.** Snippet naming convention are of the form `my-snippet`. Component snippets are an exception and follows PascalCase (e.g. `TypewriterAnimatedText`).
@@ -26,6 +26,9 @@ In addition to these rules, you should place this file header at the top of your
  *     yarn add {space-separated modules, e.g. "react-native-reanimated react-native-localization"}
  * With npm:
  *     npm install --save {space-separated modules, e.g. "react-native-reanimated react-native-localization"}
+ * 
+ * Description:
+ *     {short description of your snippet}
  * 
  * Usage:
  *     {Example of usage. The more complete the better.}
