@@ -8,6 +8,10 @@ class ClassWithEvent {
     private _state: State = "one";
     private onStateChangedRouter: EventRouter<State>;
 
+    constructor() {
+        this.onStateChangedRouter = new EventRouter();
+    }
+
     public get state() {
         return this._state;
     }
@@ -23,17 +27,22 @@ class ClassWithEvent {
 }
 
 function Component() {
-    const { current: instance } = useRef(new ClassWithEvent());
+    const ref = useRef();
+    function getInstance() {
+        if(!ref.current) ref.current = new ClassWithEvent();
+        return ref.current;
+    }
+
     const [state, setState] = useState<State>(undefined);
     useEffect(() => {
-        const sub = instance.onStateChanged(setState);
+        const sub = getInstance().onStateChanged(setState);
         return sub.remove;
-    }, [instance]);
+    }, [ref.current]);
 
     return (
         <View>
             <Text>{state ?? "No state yet..."}</Text>
-            <TouchableOpacity onPress={() => instance.state = "two"}>
+            <TouchableOpacity onPress={() => getInstance().state = "two"}>
                 <Text>Set state</Text>
             </TouchableOpacity>
         </View>
