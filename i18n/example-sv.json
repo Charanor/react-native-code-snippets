@@ -1,0 +1,6 @@
+{
+    "some-key": "Resultatet på svenska",
+    "nested": {
+        "object": "Du kan nästa värden också!"
+    }
+}

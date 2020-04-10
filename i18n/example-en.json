@@ -1,0 +1,6 @@
+{
+    "some-key": "The result in english",
+    "nested": {
+        "object": "You can nest values too!"
+    }
+}
