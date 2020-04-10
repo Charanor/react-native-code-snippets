@@ -7,6 +7,7 @@ Simply fork this repo and create a pull request! There are a few requirements:
 - **Follow the naming convention.** Snippet naming convention are of the form `my-snippet`. Component snippets are an exception and follows PascalCase (e.g. `TypewriterAnimatedText`).
 - **Place the snippets in the correct folder.** Look through the repository to see what folder your snippet should be placed in. E.g. components should be placed into `snippets/components/` and hooks into `snippets/hooks/`.
 
+
 ## File header
 In addition to these rules, you should place this file header at the top of your snippet. If one of the headers does not apply to you (e.g. no website) simply remove that line.
 `Required extra node modules` should not include `react` or `react-native` since those are implied (but SHOULD include `expo`, if needed). If there are no required node modules you can remove the `Required extra node modules` and `To install all required modules...` lines.
@@ -30,14 +31,24 @@ In addition to these rules, you should place this file header at the top of your
  * Description:
  *     {short description of your snippet}
  * 
- * Usage:
- *     {Example of usage. The more complete the better.}
- *     import { useGlobalState } from "./global-state";
- *     function Component() {
- *         const { state, reducer } = useGlobalState();
- *         return <Text>{state.data}</Text>;
- *     }
- * 
  * Please keep this comment at the top of the file to show support (even though you are free to remove it) :)
  */
 ```
+
+## File structure
+A snippet should be placed inside a folder with the same name as the snippet, accompanied by a file named `example.ts[x]`.
+```
+snippets\
+    components\
+        MyComponent\ <- this
+            MyComponent.tsx
+            example.tsx
+    hooks\
+        my-hook\ <- this
+            my-hook.ts
+            example.tsx
+    ...
+```
+
+## Example file
+The example file should contain a Minimum Verifiable Code Example (MVCE). This means that the example should be complete, self-contained, and contain no errors.
