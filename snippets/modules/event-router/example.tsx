@@ -37,7 +37,7 @@ function Component() {
     useEffect(() => {
         const sub = getInstance().onStateChanged(setState);
         return sub.remove;
-    }, [ref.current]);
+    }, []);
 
     return (
         <View>
