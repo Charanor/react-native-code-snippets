@@ -11,8 +11,14 @@
  * With npm:
  *     npm install --save react-native-localize i18n-js
  * 
+ * Description:
+ *     This is a module that allows you to seamlessly translate your app in real-time.
+ * 
  * Usage:
- *     import {translate as $} from "./i18n";
+ *     import {init as initI18n, translate as $} from "./i18n";
+ *     
+ *     initI18n(); // ONCE before using
+ * 
  *     const message1 = $("some-key");
  *     const message2 = $("nested.object");
  * 
