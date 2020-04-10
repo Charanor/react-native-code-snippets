@@ -8,13 +8,6 @@
  *     This is a module that allows your app to have a global state without using Redux. You can interract with
  *     the global state using hooks or a context consumer.
  * 
- * Usage:
- *     import { useGlobalState } from "./global-state";
- *     function Component() {
- *         const { state, reducer } = useGlobalState();
- *         return <Text>{state.data}</Text>;
- *     }
- * 
  * Please keep this comment at the top of the file to show support (even though you are free to remove it) :)
  */
 
@@ -31,7 +24,7 @@ const INITIAL_STATE = {
 type GlobalStateType = typeof INITIAL_STATE;
 
 // Change this to match your actions. "type" should be present on all actions.
-type ExampleAction = { type: "EXAMPLE", data: "hello, world!" };
+type ExampleAction = { type: "EXAMPLE", data: string };
 type Action = ExampleAction;
 
 function reducer(state: GlobalStateType, action: Action): GlobalStateType {

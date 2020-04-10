@@ -7,44 +7,6 @@
  * Description:
  *     This is a module that allows you to define event routers in a natural way.
  * 
- * Usage:
- *     import EventRouter from "./event-router";
- * 
- *     type State = "one" | "two";    
- * 
- *     class ClassWithEvent {
- *         private state: State = "one";
- *         private onStateChangedRouter: EventRouter<State>;
- * 
- *         public setState(state: State) {
- *             this.state = state;
- *             this.onStateChangedRouter.trigger(state);
- *         }
- * 
- *         public get onStateChanged() {
- *             return this.onStateChangedRouter.asEventFuncs();
- *         }
- *     }
- * 
- *     const instance = new ClassWithEvent();
- * 
- *     function SomeComponent() {
- *        const [state, setState] = useState<State>(undefined);
- *        useEffect(() => {
- *            const sub = instance.onStateChanged.subscribe(setState);
- *            return sub.remove;
- *        }, []);
- *  
- *        return (
- *            <View>
- *                <Text>{state ?? "No state yet..."}</Text>
- *                <TouchableOpacity onPress={() => instance.setState("two")}>
- *                    <Text>Set state</Text>
- *                </TouchableOpacity>
- *            </View>
- *        );
- *     }
- * 
  * Please keep this comment at the top of the file to show support (even though you are free to remove it) :)
  */
 

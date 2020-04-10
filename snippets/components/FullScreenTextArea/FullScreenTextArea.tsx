@@ -7,13 +7,6 @@
  * Description:
  *     This is a TextArea that will open up into full-screen when focused by the user.
  * 
- * Usage:
- *     import FullScreenTextArea from "./FullScreenTextArea";
- *     function Component() {
- *         const [text, setText] = useState("");
- *         return <FullScreenTextArea value={text} onTextChange={setText} />;
- *     }
- * 
  * Please keep this comment at the top of the file to show support (even though you are free to remove it) :)
  */
 

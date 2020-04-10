@@ -7,14 +7,6 @@
  * Description:
  *     This is a hook that makes "useInterval" declarative!
  * 
- * Usage:
- *     import useInterval from "./use-interval";
- *     function Component() {
- *         const [number, setNumber] = useState<number>(0);
- *         useInterval(() => setNumber(prev => prev + 1), 100);
- *         return <Text>{number}</Text>;
- *     }
- * 
  * Please keep this comment at the top of the file to show support (even though you are free to remove it) :)
  */
 
