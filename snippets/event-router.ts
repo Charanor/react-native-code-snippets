@@ -1,9 +1,11 @@
 /**
  * Author: Jesper Sporron
  * Author GitHub: https://github.com/Charanor
- * Project Github: https://github.com/Charanor/react-native-code-snippets
+ * Project GitHub: https://github.com/Charanor/react-native-code-snippets
  * License: Creative Commons Zero v1.0 Universal (CC0)
- * Required extra node modules: nothing
+ * 
+ * Description:
+ *     This is a module that allows you to define event routers in a natural way.
  * 
  * Usage:
  *     import EventRouter from "./event-router";
