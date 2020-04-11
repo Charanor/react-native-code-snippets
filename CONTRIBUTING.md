@@ -49,6 +49,26 @@ snippets\
             example.tsx
     ...
 ```
+### Executable scripts
+The only exception to this are executable scripts (bash, dash, bat, whatever) that can be placed alone inside the `shell_scripts` subfolder. There are two exceptions to this:
+ - If your snippet is an executable script that takes parameters (e.g. `./my_script "C:/some/path"`) it follows the same rules as other 
+ snippets and should be placed inside a folder with the same name as the script accompanied by an `example.txt` file.
+ - If your snippet has several versions for different shells (e.g. bash, cmd) it follows the same rules as other snippets and both scripts
+ should be placed inside a folder with the same name as the script (accompanied by an `example.txt` file if they take input paramters).
+
+Example:
+```
+snippets\
+    shell_scripts\
+        my_executable_script.sh
+        script_with_parameters\
+            script_with_parameters.sh
+            example.txt
+        portable_script\
+            portable_script.sh
+            portable_script.bat
+    ...
+```
 
 ## Example file
-The example file should contain a Minimum Verifiable Code Example (MVCE). This means that the example should be complete, self-contained, and contain no errors.
+The example file should contain a Minimum Verifiable Code Example (MVCE). This means that the example should be complete, self-contained, and contain no errors. For executable scripts the example file should include documentation for the scripts input values.
