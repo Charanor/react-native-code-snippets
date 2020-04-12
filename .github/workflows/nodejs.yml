@@ -24,6 +24,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npx ts-node index.ts
-      env:
-        CI: true
+    - name: Install dependencies
+      run: yarn --frozen-lockfile
+    - name: Autogenerate readme
+      run: npx ts-node index.ts
+      
