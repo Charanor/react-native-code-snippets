@@ -4,7 +4,7 @@
   "description": "This project contains several high-quality code snippets for React and React Native apps written in TypeScript or JavaScript.",
   "main": "index.js",
   "scripts": {
-    "generate-readme": "npx ts-node index.ts"
+    "generate-readme": "npx ts-node generate_readme.ts"
   },
   "repository": {
     "type": "git",
