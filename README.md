@@ -4,6 +4,7 @@ This project contains several high-quality code snippets for React and React Nat
 ### Components
  - [FullScreenTextArea](./snippets/components/FullScreenTextArea)
 ### Hooks
+ - [use-async-function](./snippets/hooks/use-async-function)
  - [use-interval](./snippets/hooks/use-interval)
 ### Modules
  - [event-router](./snippets/modules/event-router)
