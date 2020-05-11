@@ -22,7 +22,7 @@ class ClassWithEvent {
     }
 
     public get onStateChanged() {
-        return this.onStateChangedRouter.subscribe;
+        return this.onStateChangedRouter.subscribe.bind(this.onStateChangedRouter);
     }
 }
 
