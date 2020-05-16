@@ -7,6 +7,8 @@ This project contains several high-quality code snippets for React and React Nat
  - [use-async-function](./snippets/hooks/use-async-function)
  - [use-effect-async](./snippets/hooks/use-effect-async)
  - [use-interval](./snippets/hooks/use-interval)
+### How to use
+ - [firebase.tsx](./snippets/how-to-use/firebase.tsx)
 ### Modules
  - [event-router](./snippets/modules/event-router)
  - [global-state](./snippets/modules/global-state)
