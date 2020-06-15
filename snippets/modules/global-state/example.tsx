@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, View, TouchableOpacity } from "react-native";
-import { useGlobalState } from "./global-state";
+import { useGlobalState, GlobalStateProvider } from "./global-state";
 
 function Component() {
     const { state, dispatch } = useGlobalState();
@@ -14,4 +14,14 @@ function Component() {
     );
 }
 
-export default Component;
+function Core() {
+    return (
+        // Any component that calls "useGlobalState" must be wrapped inside GlobalStateProvider.
+        // Have 1 GlobalStateProvider at the root of your app, do not wrap each component individually.
+        <GlobalStateProvider>
+            <Component />
+        </GlobalStateProvider>  
+    );
+}
+
+export default Core;
